@@ -42,13 +42,13 @@ ul {
   justify-content: space-around;
   align-items: center;
   background-color: var(--dark-gray-color);
-  padding: 0.5em 15em;
+  padding: 0.5rem 8rem;
 }
 
 a {
   color: var(--light-gray-color);
   text-decoration: none;
-  padding-right: var(--nav-padding);
+  /* padding-right: var(--nav-padding); */
 }
 
 .nav .menu {
@@ -78,7 +78,7 @@ a {
   font-weight: 900;
   color: var(--dark-gray-color);
   text-align: center;
-  background-color: var(--white-color);
+  /* background-color: var(--white-color); */
 }
 
 .title_bar a {
@@ -224,6 +224,11 @@ a {
   padding-top: var(--padding);
 }
 
+.nav .hidden {
+  color: var(--light-gray-color);
+  display: none;
+}
+
 @media (max-width: 600px) {
   .products .pro1 .pro1_metadata .pro_name {
     font-size: 2rem;
@@ -266,5 +271,24 @@ a {
     background-image: url("https://images.macrumors.com/article-new/2019/03/ipadairgreen.jpg");
     background-position: center;
     height: 70vh;
+  }
+
+  .nav .menu {
+    display: none;
+  }
+
+  .nav .icons .search_logo {
+    display: none;
+  }
+
+  .nav .hidden {
+    display: flex;
+  }
+
+  .nav {
+    padding: 2vw 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
